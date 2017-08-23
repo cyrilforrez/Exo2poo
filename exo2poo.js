@@ -15,9 +15,9 @@ function Personnage(nom, attack, defense, sante) {
 
 
 
-var Personnage1 = new Personnage ("martin", 20, 10, 50);
-var Personnage2 = new Personnage ("Dupont", 10, 5, 30);
+var Warrior1 = new Personnage ("martin", 20, 10, 50);
+var Warrior2 = new Personnage ("Dupont", 10, 5, 30);
 
 
-Personnage1.combattre(Personnage2);
-Personnage2.combattre(Personnage1);
+Warrior1.combattre(Warrior2);
+Warrior2.combattre(Warrior1);
