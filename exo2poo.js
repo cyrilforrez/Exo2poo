@@ -6,19 +6,19 @@ function Personnage(nom, attack, defense, sante) {
     this.combattre = function(cible) {
         cible.sante = cible.sante - this.attack;
         if (cible.sante < 50) {
-            console.log(this.nom + " " + "attaque" +" "+ "et infligé" + " " + this.attack + " " + "points de degats à" + " " + cible.nom);
-            console.log("il reste" + " " + cible.sante + " " + "de vie" + " " + "à" + " " + cible.nom);
+            alert(this.nom + " " + "attaque" + " " + "et infligé" + " " + this.attack + " " + "points de degats à" + " " + cible.nom);
+            alert("il reste" + " " + cible.sante + " " + "de vie" + " " + "à" + " " + cible.nom);
         }
-        if (cible.sante ==0){
-        	console.log(cible.nom + " " + "est mort");
+        if (cible.sante == 0) {
+            alert(cible.nom + " " + "est mort");
         }
     };
     this.heal = function() {
         if (this.mana >= 10) {
             this.mana -= 10
             this.sante += 10
-            console.log(this.nom + " " + "lance son sort de soin et se soigne de" + " " + this.mana + " " + "points de vie");
-            console.log(this.nom + " " + "à" + " " + this.sante + " " + "points de vie");
+            alert(this.nom + " " + "lance un sort de soin et se soigne de" + " " + this.mana + " " + "points de vie");
+            alert(this.nom + " " + "à" + " " + this.sante + " " + "points de vie");
         }
     };
 }
